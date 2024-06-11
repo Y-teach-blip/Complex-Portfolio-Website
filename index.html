@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Paradise</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for this specific page */
+        body {
+            background-color: #ff7d7d;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .flower {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .flower-card {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .flower-card img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .flower-card h2 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .flower-card p {
+            color: #666;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Flower Paradise</h1>
+        <div class="flower">
+            <div class="flower-card">
+                <img src="https://media.istockphoto.com/id/1256125259/photo/pink-roses-in-garden.jpg?s=612x612&w=0&k=20&c=_Ook5Blxe5_k5g8J3Y8KkUQPO8lo53SGVKWb53F-sPQ=" alt="Rose">
+                <h2>Rose</h2>
+                <p>Roses are one of the most popular flowers, known for their beauty and fragrance.</p>
+            </div>
+            <div class="flower-card">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/lilies-types-1586906437.jpg" alt="Lily">
+                <h2>Lily</h2>
+                <p>Lilies symbolize purity and refined beauty. They are often used in bouquets for weddings and other special occasions.</p>
+            </div>
+            <div class="flower-card">
+                <img src="https://m.media-amazon.com/images/I/51EIasALCGL._AC_UF1000,1000_QL80_.jpg" alt="Tulip">
+                <h2>Tulip</h2>
+                <p>Tulips are brightly colored flowers that come in various shades. They are commonly associated with spring and renewal.</p>
+            </div>
+
+            <div class="flower-card">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/sunflower-types-1586794350.jpg" alt="Tulip">
+                <h2>Sunflower</h2>
+                <p>The common sunflower (Helianthus annuus) is a species of large annual forb of the daisy family Asteraceae. The common sunflower is harvested for its edible oily seeds which are used in the production of cooking oil.</p>
+            </div>
+
+            <div class="carousel">
+                <div class="carousel-slide">
+                  <img src="tulip.jpg" alt="Image 2">
+                </div>
+                <div class="carousel-slide">
+                  <img src="https://hips.hearstapps.com/hmg-prod/images/lilies-types-1586906437.jpg" alt="Image 3">
+                </div>
+              </div>
+
+              <div class="flower-card">
+                <h1>Vote for your favorite programming language!</h1>
+                <div class="options">
+                  <label>
+                    <input type="radio" name="language" value="javascript"> JavaScript
+                  </label><br>
+                  <label>
+                    <input type="radio" name="language" value="python"> Python
+                  </label><br>
+                  <label>
+                    <input type="radio" name="language" value="java"> Java
+                  </label><br>
+                  <label>
+                    <input type="radio" name="language" value="csharp"> C#
+                  </label><br>
+                </div>
+                <button onclick="submitVote()">Submit Vote</button>
+                <div id="result"></div>
+              </div>
+
+              <div class="flower-card">
+                  <h1>Quiz Time!</h1>
+                  <div class="question" id="question"></div>
+                  <div class="options">
+                    <button onclick="checkAnswer('option1')" id="option1"></button>
+                    <button onclick="checkAnswer('option2')" id="option2"></button>
+                    <button onclick="checkAnswer('option3')" id="option3"></button>
+                    <button onclick="checkAnswer('option4')" id="option4"></button>
+                  </div>
+                  <div id="result"></div>
+                  <div id="score">Score: <span id="scoreValue">0</span></div>
+                </div>
+
+               
+
+            <script src="script.js"></script>  
+</body>
+</html>
